@@ -6,47 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Utopia</title>
   <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div><a href="./index.html">Utopia</a></div>
-      <ul class="bar left">
-        <li><a href="">LECCIONES</a></li>
-        <li><a href="">BIBLIOTECA</a></li>
-        <li><a href="">MIS CURSOS</a></li>
-      </ul>
-      <ul class="bar right">
-        <li><a href="">TEMA</a></li>
-        <li><a href="">IDIOMA</a></li>
-        <li><a href="">CONFIGURACION</a></li>
-        <li><a href="">PERFIL</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navbar, se usa js para insertar -->
+  <header id="header-nav"></header>
   <main>
     <div class="hero">
       <form action="">
         <input type="text" id="search">
-        <input type="button" name="search" id="search-btn" class="" value="BUSCAR">
+        <input type="button" name="search" id="search-btn" class="" value="BUSCAR" placeholder="Buscar">
       </form>
-      <h1>ESTUDIA FÁCIL</h1>
-      <p>Aprende con y para tu comunidad</p>
-      <a href="#">¿Qué es Utopia?</a>
+      <div class="hero-text">
+        <h1><span id="text-hero-variable">APRENDE</span> FÁCIL</h1>
+        <p>con y para tu comunidad</p> <br>
+        <a href="#">¿Qué es Utopia?</a>
+      </div>
     </div>
-    <sectio class="container cards">
-      <div class="card"><a href="#">MATEMÁTICAS</a></div>
-      <div class="card"><a href="#">CIENCIAS</a></div>
-      <div class="card"><a href="#">FÍSICA</a></div>
-      <div class="card"><a href="#">BIOLOGÍA</a></div>
-      <div class="card"><a href="#">QUÍMICA</a></div>
-    </sectio>
+    <section class="container">
+      <div class="cell"><a href="#"><div class="green"> MATEMÁTICAS</div></a></div>
+      <div class="cell"><a href="#"><div class="red"> CIENCIAS</div></a></div>
+      <div class="cell"><a href="#"><div class="light-blue"> FÍSICA</div></a></div>
+      <div class="cell"><a href="#"><div class="yellow"> BIOLOGÍA</div></a></div>
+      <div class="cell"><a href="#"><div class="red"> QUÍMICA</div></a></div>
+
+      <div class="cell"><a href="#"><div class="light-blue"> CARPINTERÍA</div></a></div>
+      <div class="cell"><a href="#"><div class="green"> COCINA</div></a></div>
+      <div class="cell"><a href="#"><div class="red"> LENGUAS</div></a></div>
+      <div class="cell"><a href="#"><div class="yellow"> HISTORIA</div></a></div>
+      <div class="cell"><a href="#"><div class="green"> PROGRAMACIÓN</div></a></div>
+
+    </section>
+    
   </main>
   <footer>
       <h2>UTOPIA</h2>
-      <p>Heinz G. Beckers Sandoval 2023</p>
+      <p>Heinz Gerhard Beckers Sandoval | 2023</p>
   </footer>
-  
+  <script src="./assets/js/navbar.js" type="text/javascript"></script>
+  <script src="./assets/js/index.js" type="text/javascript"></script>
 </body>
 </html>

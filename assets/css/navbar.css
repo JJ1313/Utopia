@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/*------ LOGO UTOPIA ------*/
+.logo{
+  padding-top: .5rem;
+}
+.logo > a{
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+/*------ NAVBAR ------*/
+/* Navbar total */
+.navbar{
+  display: flex;
+  height: 3rem;
+  background-color: #333;
+}
+/* Secciones izquiera y derecha */
+.bar{
+  list-style: none;
+  display: flex;
+}
+.bar > li{
+  padding: .8rem 1.5rem;
+}
+.bar > li:hover{
+  background-color: rgba(77, 180, 77);
+  /* background-color: #222; */
+}
+.bar a{
+  color: #ddd;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .2rem;
+}
+/* Seccion izquierda */
+.bar.left{
+  margin-right: auto;
+}
+/* Seccion derecha */
+.bar.right{
+  margin-left: auto;
+}
+/*------ RESPONSIVIDAD ------*/
+@media screen and (max-width: 920px){
+  #bar-collapse-l{
+    position: fixed;
+    inset: 0 30% 0 0;
+    background: rgba(51, 51, 51, 0.7);
+    backdrop-filter: blur(.3em);
+    z-index: 1;
+    padding: min(20vh, 10rem) 2rem;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform .3s ease-in-out;
+  }
+  .logo{
+    margin-left: 3rem;
+  }
+  #bar-collapse-l[data-visible ="true"]{
+    transform: translate(0%);
+  }
+}
+@media (min-width:  921px){
+  .navbar-toggler{
+    display:none;
+  }
+}
+
+/* ------ ICONS ------ */
+/* Hamburger */
+.navbar-toggler{
+  background: red;
+  /* background-color: rgba(51, 51, 51, 1); */
+  color: #ddd;
+  z-index: 9999;
+  position: absolute;
+  width: 1.5rem;
+  margin:.5rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+}

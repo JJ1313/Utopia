@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* ------ HERO ------ */
+.hero{
+  background: #222;
+  position: relative;
+  height: 20rem;
+  text-align: center;
+}
+.hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ddd;
+  letter-spacing: .2rem;
+  font-weight: 600;
+}
+.hero-text h1{
+  font-size: 2.5rem;
+  letter-spacing: .3rem;
+  font-weight: 700;
+}
+.hero-text a{
+  color: #ddd;
+}
+#text-hero-variable{
+  text-align: center;
+  display: inline-block;
+  width: 15rem;
+}
+
+.hero input[type="text"]{
+  width: 17rem;
+  height: 2rem;
+  margin-top: 1rem;
+  background-color: #222;
+  border-bottom: solid 3px hsl(120, 40%, 50%);
+}
+.hero input[type="button"]{
+  height: 2rem;
+  background: transparent;
+  color: #ccc;
+}
+.hero input:placeholder{
+  color: red;
+}
+/* ------ CONTAINER ------ */
+.container{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 3rem;
+}
+@media screen and (min-width: 1101px){
+  .container{
+    padding: 0 11rem;
+  }
+}
+/*------ CARTAS DE TEMAS DE LOS CURSOS ------*/
+/* CELL: secciones en las cuales se divide el ancho de la pantalla
+  - Dentro de cada cell esta las cartas con los links a los distintos temas.
+  - Distinta distribucion de cells para cada tamaño 
+*/
+.cell{
+  text-align:  center;
+  height: 4.5rem;
+  background-color: inherit;
+  border: none;
+  vertical-align: middle;
+}
+.cell a{
+  width: 11rem;
+  height: 3rem;
+  text-decoration: none;
+  color: #222;
+  display: block;
+  margin: 0 auto;
+}
+.cell  div{
+  width: inherit;
+  height: inherit;
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+/* Responsividad de las cell */
+@media screen and (max-width: 960px) {
+  /* Grupos de 5 cells en 2 filas */
+  .cell:nth-child(5n+4){
+    width: 33.333%;
+  }
+  .cell:nth-child(5n+3),
+  .cell:nth-child(5n+5){
+    width: 33.333%;
+  }
+  .cell:nth-child(5n+1){
+     width: 50%;
+     padding-left: 17%;
+  }
+  .cell:nth-child(5n+2){
+    width: 50%;
+    padding-right: 17%;  
+  }
+}
+@media screen and (min-width: 961px){
+  /* Grupos de 7 cells en 2 filas */
+  .cell:nth-child(7n+4),
+  .cell:nth-child(7n+5),
+  .cell:nth-child(7n+6),
+  .cell:nth-child(7n+7){
+    width: 25%;
+  }
+  .cell:nth-child(7n+1){
+    width: 33.333%;
+    padding-left: 13%;
+  }
+  .cell:nth-child(7n+2){
+    width: 33.333%;
+  }
+  .cell:nth-child(7n+3){
+    width: 33.333%;
+    padding-right: 15%;
+  }
+  .container{
+    padding: 0 5rem;
+  }
+}
+
+/*------ CARDS COLORS ------*/
+.green{
+  background-color: hsl(120, 40%, 50%);  
+}
+.red{
+  background-color: hsl(1, 40%, 50%);  
+}
+.light-blue{
+  background-color: hsl(180, 40%, 50%);  
+}
+.yellow{
+  background-color: hsl(60, 40%, 50%);  
+}
+/* ------ FOOTER ------ */
+footer{
+  padding: 5rem;
+  font-size: .8rem;
+  font-weight: 400;
+  color: #ddd;
+  background-color: #222;
+  text-align: center;
+  letter-spacing:  .2rem;
+}
+footer h2{
+  font-size: 2rem;
+  letter-spacing: .3rem;
+}
